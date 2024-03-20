@@ -1,4 +1,4 @@
-# <h1 align="center">Rick and Morty - react-select ✨</h1>
+# <h1 align="center">Rick and Morty - Multiselect (react-select) ✨</h1>
 
 <p align="center">Implementing Rick and Morty characters as multiselect in the react-select component.</p>
 
