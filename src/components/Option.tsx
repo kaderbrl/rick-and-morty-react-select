@@ -27,7 +27,7 @@ const Option = (props: OptionProps<CharacterOptionType>) => {
   return (
     <components.Option {...props}>
       <div className='character-option'>
-        <input id={props.label} type='checkbox' defaultChecked={props.isSelected} />
+        <input id={props.label} type='checkbox' checked={props.isSelected} />
         <label htmlFor={props.label}>
           <img
             src={props.data.image}
