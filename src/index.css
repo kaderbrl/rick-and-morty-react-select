@@ -1,0 +1,146 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+/* Variables */
+:root {
+  --white: #ffffff;
+  --dark: #333333;
+  --gray: #c1c1c1;
+  --light: #e2e8f0;
+  --red: #ff0000;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--white);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gray);
+  border-radius: 10px;
+}
+
+/* Container */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+
+  header {
+    display: inline-flex;
+    align-items: center;
+    padding-top: 30px;
+    color: var(--dark);
+
+    h1 {
+      font-size: clamp(1rem, 10vw, 2rem);
+    }
+  }
+
+  /* Select Container */
+  .select-container {
+    width: 35%;
+
+    /* Select Option */
+    .character-option {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      input {
+        width: 20px;
+        height: 20px;
+      }
+
+      label {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img {
+          border-radius: 10px;
+          object-fit: cover;
+        }
+
+        div {
+          p {
+            margin-bottom: 0;
+            font-weight: 500;
+          }
+
+          span {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  /* Card Container */
+  .card-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    padding: 40px 80px;
+
+    /* Card */
+    .card {
+      min-width: 300px;
+      border-radius: 15px;
+      background-color: var(--light);
+      display: flex;
+      justify-content: start;
+      min-height: 100px;
+      overflow: hidden;
+      box-shadow: 0 2px 2px var(--gray);
+
+      img {
+        object-fit: cover;
+      }
+
+      div {
+        padding: 10px 20px;
+
+        h3 {
+          color: var(--dark);
+        }
+
+        p {
+          color: var(--dark);
+          font-size: 15px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  /* No Data Warning */
+  .warning {
+    color: var(--red);
+  }
+
+  /* Media Query for Responsive */
+  @media screen and (max-width: 768px) {
+    .select-container {
+      width: 90%;
+    }
+    .card-container {
+      padding: 30px 20px;
+    }
+  }
+}
