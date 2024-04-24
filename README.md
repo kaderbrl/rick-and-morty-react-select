@@ -22,7 +22,7 @@ Check the live demo here 👉 [Demo](https://rick-and-morty-react-select.vercel.
 First clone this repository.
 
 ```shell
-https://github.com/kaderbrl/rick-and-morty-react-select.git
+git clone https://github.com/kaderbrl/rick-and-morty-react-select.git
 ```
 
 Install dependencies. Make sure you already have [`node.js`](https://nodejs.org/en/) & [`npm`](https://www.npmjs.com/) installed in your system.
